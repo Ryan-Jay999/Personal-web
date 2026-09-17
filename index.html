@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人展示平台 | 上海杉达学院</title>
+  <meta name="description" content="上海杉达学院软件工程专业学生的个人展示平台" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" id="navLogo">Sanda · 个人展示</a>
+      <button class="nav__toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">关于我</a>
+        <a href="#skills">能力</a>
+        <a href="#hobbies">兴趣</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首屏 Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__avatar" id="heroAvatar">你</div>
+      <h1 class="hero__name" id="heroName">你的名字</h1>
+      <p class="hero__title" id="heroTitle">软件工程 · 大二学生</p>
+      <p class="hero__tagline" id="heroTagline">一句话介绍你自己</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">查看我的项目</a>
+        <a href="#contact" class="btn btn--ghost">联系我</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="向下滚动">⌄</a>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__kicker">ABOUT</span>
+      <h2 class="section__title">关于我</h2>
+    </div>
+    <div class="about">
+      <div class="about__card">
+        <p class="about__text" id="aboutText"></p>
+      </div>
+      <ul class="about__facts" id="aboutFacts"></ul>
+    </div>
+  </section>
+
+  <!-- 能力 / 技能 -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <span class="section__kicker">SKILLS</span>
+      <h2 class="section__title">我的能力</h2>
+    </div>
+    <div class="skills" id="skillsWrap"></div>
+  </section>
+
+  <!-- 兴趣爱好 -->
+  <section class="section" id="hobbies">
+    <div class="section__head">
+      <span class="section__kicker">HOBBIES</span>
+      <h2 class="section__title">兴趣爱好</h2>
+    </div>
+    <div class="hobbies" id="hobbiesWrap"></div>
+  </section>
+
+  <!-- 项目展示 -->
+  <section class="section section--alt" id="projects">
+    <div class="section__head">
+      <span class="section__kicker">PROJECTS</span>
+      <h2 class="section__title">我做过的项目</h2>
+      <p class="section__sub" id="projectsCount"></p>
+    </div>
+    <div class="projects" id="projectsWrap"></div>
+  </section>
+
+  <!-- 联系方式 -->
+  <section class="section" id="contact">
+    <div class="section__head">
+      <span class="section__kicker">CONTACT</span>
+      <h2 class="section__title">联系我</h2>
+    </div>
+    <div class="contact" id="contactWrap"></div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span id="footerName">你的名字</span> · 上海杉达学院软件工程</p>
+    <p class="footer__tip">本页面由个人展示平台模板生成，所有内容均可在 <code>assets/js/data.js</code> 中修改。</p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
